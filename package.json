@@ -1,0 +1,50 @@
+{
+  "name": "nevelline-backend",
+  "version": "1.0.0",
+  "description": "Backend API for Nevelline Ecommerce Platform",
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "nodemon ./src/index.ts",
+    "build": "tsc",
+    "start": "node ./dist/index.js",
+    "seed": "npx ts-node ./src/scripts/seedDatabase.ts",
+    "seed:admin": "npx ts-node ./src/scripts/seedAdmin.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ecommerce",
+    "api",
+    "express"
+  ],
+  "author": "Emmanuel",
+  "license": "ISC",
+  "dependencies": {
+    "@types/express-session": "^1.18.2",
+    "axios": "^1.11.0",
+    "bcryptjs": "^3.0.2",
+    "cloudinary": "^2.7.0",
+    "connect-mongo": "^5.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.1",
+    "express": "^4.21.2",
+    "express-mongo-sanitize": "^2.2.0",
+    "express-session": "^1.18.2",
+    "express-winston": "^4.2.0",
+    "helmet": "^8.1.0",
+    "mongo-sanitize": "^1.1.0",
+    "mongoose": "^8.18.0",
+    "morgan": "^1.10.1",
+    "resend": "^6.0.1",
+    "winston": "^3.17.0"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^3.0.0",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.3",
+    "@types/morgan": "^1.9.10",
+    "@types/node": "^24.3.0",
+    "nodemon": "^3.1.10",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
+  }
+}
