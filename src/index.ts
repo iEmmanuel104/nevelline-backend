@@ -47,7 +47,8 @@ async function startServer() {
         app.use(cors({
             origin: [
                 process.env.FRONTEND_URL || 'http://localhost:3000',
-                process.env.ADMIN_URL || 'http://localhost:3001'
+                process.env.ADMIN_URL || 'http://localhost:3001',
+                'https://nevelline.vercel.app'
             ],
             credentials: true,
             methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
