@@ -51,7 +51,7 @@ const SettingsSchema: Schema = new Schema({
     siteName: {
         type: String,
         required: true,
-        default: 'Nevellines'
+        default: 'Nevelline'
     },
     siteDescription: String,
     logo: String,
@@ -76,7 +76,7 @@ const SettingsSchema: Schema = new Schema({
         email: {
             type: String,
             required: true,
-            default: 'support@nevellines.com'
+            default: 'support@nevelline.com'
         },
         phone: {
             type: String,

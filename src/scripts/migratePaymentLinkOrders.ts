@@ -9,7 +9,7 @@ import { logger } from '../utils/logger';
 // Load environment variables
 dotenv.config({ path: path.join(__dirname, '../../.env') });
 
-const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/nevellines';
+const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/nevelline';
 
 async function migratePaymentLinkOrders() {
     try {

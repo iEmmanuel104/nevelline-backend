@@ -14,23 +14,23 @@ export const getCloudinaryConfig = async (req: AuthRequest, res: Response): Prom
         const { type = 'general' } = req.query;
 
         let uploadPreset = UPLOAD_PRESETS.GENERAL;
-        let folder = 'nevellines';
+        let folder = 'nevelline';
         let aspectRatio = 1; // Default square
 
         switch (type) {
             case 'products':
                 uploadPreset = UPLOAD_PRESETS.PRODUCTS;
-                folder = 'nevellines/products';
+                folder = 'nevelline/products';
                 aspectRatio = 0.8; // Portrait for products (4:5 ratio)
                 break;
             case 'categories':
                 uploadPreset = UPLOAD_PRESETS.CATEGORIES;
-                folder = 'nevellines/categories';
+                folder = 'nevelline/categories';
                 aspectRatio = 1.33; // Landscape for categories (4:3 ratio)
                 break;
             case 'banners':
                 uploadPreset = UPLOAD_PRESETS.BANNERS;
-                folder = 'nevellines/banners';
+                folder = 'nevelline/banners';
                 aspectRatio = 2.5; // Wide banner ratio
                 break;
         }

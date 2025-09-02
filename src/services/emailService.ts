@@ -33,11 +33,11 @@ export interface OrderConfirmationEmailData {
 }
 
 export class EmailService {
-    private static FROM_EMAIL = 'orders@nevellines.com'; // Replace with your verified domain
-    private static COMPANY_NAME = 'Nevellines';
+    private static FROM_EMAIL = 'orders@nevelline.com'; // Replace with your verified domain
+    private static COMPANY_NAME = 'Nevelline';
     private static COMPANY_ADDRESS = 'Lagos, Nigeria';
-    private static SUPPORT_EMAIL = 'support@nevellines.com';
-    private static WEBSITE_URL = 'https://nevellines.com';
+    private static SUPPORT_EMAIL = 'support@nevelline.com';
+    private static WEBSITE_URL = 'https://nevelline.com';
 
     static async sendOrderConfirmation(data: OrderConfirmationEmailData): Promise<boolean> {
         try {

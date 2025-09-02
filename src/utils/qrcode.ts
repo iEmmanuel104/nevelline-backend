@@ -50,13 +50,13 @@ export const generateStyledQRCode = (
     return qrUrl;
 };
 
-// Generate branded QR code with Nevellines styling
+// Generate branded QR code with Nevelline styling
 export const generateBrandedQRCode = (
     paymentUrl: string,
     amount: number,
     options: BrandedQRCodeOptions = {}
 ): string => {
-    // Use Nevellines brand colors
+    // Use Nevelline brand colors
     const brandOptions: QRCodeOptions = {
         size: options.size || 400,
         format: options.format || 'png',
@@ -94,7 +94,7 @@ export const generateDownloadableQRCode = async (
         // 2. Add branding elements (logo, text, borders)
         // 3. Store it temporarily for download
 
-        const fileName = `nevellines-payment-qr-${paymentDetails.reference}.png`;
+        const fileName = `nevelline-payment-qr-${paymentDetails.reference}.png`;
 
         return {
             qrCodeUrl,

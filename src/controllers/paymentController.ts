@@ -59,7 +59,7 @@ export const generatePaymentLink = async (req: AuthRequest, res: Response): Prom
             productId,
             productName,
             customAmount: amount,
-            description: description || productName || 'Payment for Nevellines',
+            description: description || productName || 'Payment for Nevelline',
             customerEmail,
             customerName,
             customerPhone,

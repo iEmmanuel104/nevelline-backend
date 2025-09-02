@@ -347,7 +347,7 @@ const products = [
 ];
 
 const defaultSettings = {
-    siteName: 'Nevellines',
+    siteName: 'Nevelline',
     siteDescription: 'Your one-stop shop for quality fashion and accessories',
     hero: {
         title: 'New Season Arrivals',
@@ -357,15 +357,15 @@ const defaultSettings = {
         ctaLink: '/collections'
     },
     contact: {
-        email: 'support@nevellines.com',
+        email: 'support@nevelline.com',
         phone: '+234 800 000 0000',
         whatsapp: '+234 800 000 0000',
         address: 'Lagos, Nigeria'
     },
     social: {
-        facebook: 'https://facebook.com/nevellines',
-        instagram: 'https://instagram.com/nevellines',
-        twitter: 'https://twitter.com/nevellines'
+        facebook: 'https://facebook.com/nevelline',
+        instagram: 'https://instagram.com/nevelline',
+        twitter: 'https://twitter.com/nevelline'
     },
     payment: {
         enablePaystack: true,
@@ -373,7 +373,7 @@ const defaultSettings = {
         enableCashOnDelivery: false,
         bankDetails: {
             bankName: 'First Bank of Nigeria',
-            accountName: 'Nevellines Fashion',
+            accountName: 'Nevelline Fashion',
             accountNumber: '1234567890'
         }
     },

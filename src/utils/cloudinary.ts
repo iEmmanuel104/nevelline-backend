@@ -26,7 +26,7 @@ export const generateCloudinaryConfig = (preset: string, options: any = {}) => {
         resourceType: 'image',
         maxFileSize: 5000000, // 5MB
         clientAllowedFormats: ['jpg', 'jpeg', 'png', 'webp'],
-        folder: options.folder || 'nevellines',
+        folder: options.folder || 'nevelline',
         transformation: [
             { quality: 'auto', fetch_format: 'auto' },
             ...(options.transformation || [])

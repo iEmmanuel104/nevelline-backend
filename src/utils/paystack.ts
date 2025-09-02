@@ -102,7 +102,7 @@ export const createPaymentLink = async (linkData: PaymentLinkData): Promise<Paym
         logger.info('Amount converted to kobo:', { original: customAmount, kobo: amountInKobo });
 
         // Validate email format if provided
-        const emailToUse = customerEmail || 'customer@nevellines.com';
+        const emailToUse = customerEmail || 'customer@nevelline.com';
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (!emailRegex.test(emailToUse)) {
             logger.error('Invalid email format:', emailToUse);
@@ -416,7 +416,7 @@ export const generateQRCode = (paymentUrl: string): string => {
         size: '300x300',
         format: 'png',
         data: paymentUrl,
-        color: '2563eb', // Nevellines brand blue
+        color: '2563eb', // Nevelline brand blue
         bgcolor: 'ffffff',
         margin: '15',
         ecc: 'M'
