@@ -72,12 +72,12 @@ async function startServer() {
             saveUninitialized: false,
             store: MongoStore.create({
                 mongoUrl: process.env.MONGODB_URI || 'mongodb://localhost:27017/nevelline',
-                touchAfter: 24 * 3600 // lazy session update
+                touchAfter: 24 * 3600 * 30 // Update session every 30 days
             }),
             cookie: {
                 secure: process.env.NODE_ENV === 'production',
                 httpOnly: true,
-                maxAge: 1000 * 60 * 60 * 24 * 7 // 7 days
+                maxAge: 1000 * 60 * 60 * 24 * 365 // 1 year for persistent login
             }
         }));
 
